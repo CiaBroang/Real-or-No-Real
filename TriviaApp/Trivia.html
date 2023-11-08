@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="Trivia.css">
+</head>
+
+<body>
+<div class = "app">
+    <h1>True or false</h1>
+    <div class="stats">
+            <div class="col">
+                <p>Question: <span id="questionCount"></span></p>
+            </div>
+            <div class="col">
+                <p>Time: <span id="timer">30s</span></p>
+            </div>
+            <div class="col">
+                <p>Points: <span id="score">0</span></p>
+            </div>
+    </div>
+    <div class="quiz"></div>
+        <h2 id="question"></h2>
+        <div id="true-or-false-buttons">
+            <button type="button" class="btn" id="btnTrue">True</button>
+            <button type="button" class="btn" id="btnFalse">False</button>
+        </div>
+        <button id="btnNext">Next</button>
+</div>
+<script src="Trivia.js"></script>
+</body>
+</html>
