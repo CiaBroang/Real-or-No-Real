@@ -63,16 +63,11 @@ quiz h2{
     transition: all 0.3s;
 }
 
-/* Kolla så detta funkar och ta bort kommentaren under med separat hover */
+
 .btn:hover:not([disabled]){ 
     background: #222;
     color: #fff;
 }
-
-/* .btn:disabled {
-    background: #fff;
-    color: #222;
-  } */
 
 
 #btnNext{
@@ -87,3 +82,40 @@ quiz h2{
     display: none;
 }
 
+#btnBack{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0px;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+/* FORM */
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 1rem;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(0, 30, 77, 0.5);
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+#highScoresList {
+    margin-bottom: 2rem;
+    padding-left: 0;
+    list-style: none;
+}
