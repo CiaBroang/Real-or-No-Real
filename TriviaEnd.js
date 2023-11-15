@@ -23,7 +23,6 @@ var chrt = document.getElementById("chartId").getContext("2d");
          type: 'pie',
          data: {
             labels: ["CORRECT", "INCORRECT"],
-            
             datasets: [{
                label: "Chart",
               data: [mostRecentScore, mostRecentQuestionCount - mostRecentScore],

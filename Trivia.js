@@ -91,7 +91,6 @@ fetch(`http://localhost:3000/results`, {
   }
 
 
-
 })
   .then(response => {
     if (response.ok) {
@@ -102,51 +101,16 @@ fetch(`http://localhost:3000/results`, {
   })
   .then(data => {
     console.log(data);  //Ta bort sen
-    // questionArray = data.results;
     questionArray = data;
     displayQuestion(data);
-    addQuestion();
-
   })
   .catch(error => {
     console.log('Error:', error);
   })
-
-
-// //lägger till en fråga med POST
-// const apiUrl = 'http://localhost:3000/results';
-
-// function addQuestion() {
-//   console.log('Adding question!')
-//   const questionData = {category: "Dumt test inget id hihi"}
-
-//   fetch(apiUrl, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(questionData),
-//   })
-//     .then(response => {
-//       console.log('post res', response)
-//       if (response.ok) {
-//         return response.json();
-//       } else {
-//         throw new Error('Something went wrong');
-//       }
-//     })
-//     .then(data => {
-//       questionArray.push(data);
-//     })
-//     .catch(error => {
-//       console.log('Error:', error);
-//     });
-// }
-
-
 
 //1. Lägg till POST och DELETE av frågor i mitt quiz API, med ett webbformulär
 //2. Fixa en timer
 //3. Fixa styling
 //4. Visa upp scoreboard från start på TriviaEnd-sidan
 //5. Lägg chart på en egen sida
+//6. Fixa så att antalet för totalQuestionCount uppdateras varje gång quizet startas om

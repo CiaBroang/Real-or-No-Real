@@ -82,6 +82,17 @@ quiz h2{
     display: none;
 }
 
+#btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0px;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
 #btnBack{
     background: #001e4d;
     color: #fff;
@@ -94,6 +105,7 @@ quiz h2{
 }
 
 /* FORM */
+
 form{
     width: 100%;
     display: flex;
@@ -103,12 +115,38 @@ form{
 
 input {
     margin: 1rem;
-    width: 20rem;
     padding: 1rem;
     font-size: 1.8rem;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(0, 30, 77, 0.5);
 }
+
+.radio-container label {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+    color: #001e4d;
+}
+
+input[type="radio"] {
+    box-shadow: none;
+    color: #001e4d;
+    margin: 0;
+    padding: 0; 
+}
+
+input[type="radio"]:checked {
+    color: #001e4d;
+}
+
+.radio-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 
 input::placeholder{
     color: #aaa;
