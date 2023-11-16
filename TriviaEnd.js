@@ -1,5 +1,3 @@
-// Slutskärm med olika val och high score
-
 const username = document.getElementById('username');
 const highScoresList = document.getElementById('highScoresList');
 const btnSaveScore = document.getElementById('btnSaveScore');
@@ -16,7 +14,6 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
-//PIE CHART
 
 var chrt = document.getElementById("chartId").getContext("2d");
       var chartId = new Chart(chrt, {
@@ -35,13 +32,12 @@ var chrt = document.getElementById("chartId").getContext("2d");
          },
       });
 
-//SAVE HIGH SCORE
 
 username.addEventListener('keyup', () => {
     btnSaveScore.disabled = !username.value;
 });
 
-saveHighScore = () => {
+const saveHighScore = () => {
   const score = {
     name: username.value,
     score: mostRecentScore

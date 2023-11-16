@@ -32,16 +32,6 @@
       "incorrect_answers": [
         "True"
       ]
-    },
-    {
-      "question": "AIK won Allsvenskan in 2009",
-      "correct_answer": "True",
-      "id": 4
-    },
-    {
-      "question": "test",
-      "correct_answer": "True",
-      "id": 6
     }
   ]
 }
