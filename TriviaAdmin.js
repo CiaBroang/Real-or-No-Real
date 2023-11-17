@@ -6,12 +6,12 @@ const correctAnswerFalse = document.getElementById('btnCorrectAnswerFalse');
 const btnAddQuestion = document.getElementById('btnAddQuestion');
 const questionIdInput = document.getElementById('questionId');
 const btnDeleteQuestion = document.getElementById('btnDeleteQuestion');
+const btnBack = document.getElementById('btnBack');
 
 
 btnAddQuestion.addEventListener('click', addQuestion);
 
 function addQuestion() {
-  // Här borde jag validera att användaren har valt true eller false som svar på sin fråga
   const selectedAnswer = btnCorrectAnswerTrue.checked ? 'True' : 'False';
 
   const questionData = {
@@ -41,12 +41,10 @@ fetch(apiUrl, {
 
 btnDeleteQuestion.addEventListener('click', deleteQuestion);
 
-
 function deleteQuestion() {
   const questionId = Number(questionIdInput.value);
 
-  // Använd min variabel apiUrl här
-  fetch(`http://localhost:3000/results/${questionId}`, {
+  fetch(`${apiUrl}/${questionId}`, {
       headers: {'Content-type': 'application/json'},
       method: 'DELETE'
   }).then(result => {
@@ -54,7 +52,8 @@ function deleteQuestion() {
   })
 }
 
-// Här deklarerar jag listenern på ett annat sätt än vad jag gjort tidigare, ska kika på det
-btnBack.addEventListener('click', function goBack() {
+function goBack() {
   window.location.href = '/TriviaEnd.html';
-});
+};
+
+btnBack.addEventListener('click', goBack);

@@ -11,8 +11,8 @@ let currentQuestionIndex = 0;
 let currentScore = 0;
 let questionArray = []
 
-// Frågorna från API:t innehöll HTML-escapes
-//denna hittade jag på nätet
+// Frågorna från API:t innehöll HTML-escapes,
+// denna hittade jag på nätet
 function unEscape(htmlStr) {
   htmlStr = htmlStr.replace(/&lt;/g , "<");
   htmlStr = htmlStr.replace(/&gt;/g , ">");
@@ -94,7 +94,11 @@ fetch(`http://localhost:3000/results`, {
     console.log('Error:', error);
   })
 
-
+// I en nästa iteration
 // Visa upp scoreboard från start på TriviaEnd-sidan
 // Lägg chart på en egen sida
-// Fixa så att antalet för totalQuestionCount uppdateras varje gång quizet startas om
+// Fixa så att antalet för totalQuestionCount uppdateras varje gång quizet startas om, och gör en funktion för att starta om quizet med en timer
+// Lägg till timer som räknar ner när quizet startar
+// block till alla inputfält
+// Validera att användaren har valt true eller false som svar på sin fråga
+// Inloggning med lösenord till adminsidan

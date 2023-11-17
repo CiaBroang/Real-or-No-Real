@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trivia admin screen</title>
-        <link rel="stylesheet" href="Trivia.css">
-    </head>
-    <body>
-        <div class="app">
-            <h1>Add or remove questions</h1>
-            <div class="adminInput"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia admin screen</title>
+    <link rel="stylesheet" href="Trivia.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Add or remove questions</h1>
+        <div class="adminInput">
             <form>
                 <h2>Add a question</h2>
                 <input type="text" name="newQuestion" id="newQuestion" placeholder="new question">
-            </input>
-            <p>Is the answer true or false?</p>
-            <div class="radio-container">
-                <label>
-                    <input type="radio" id="btnCorrectAnswerTrue" name="option" value="true">True
-                </label>
-                <label>
-                    <input type="radio" name="option" id="btnCorrectAnswerFalse" value="false">False
-                </label>
-            </div>
-            <button type="button" class="btn" id="btnAddQuestion">Add question</button>
-            <h2>Delete a question</h2>
-            <input type="text" name="delete" id="questionId" placeholder="question ID">
-            <button type="button" class="btn" id="btnDeleteQuestion">Delete question</button>
-        </form>
-    </body>
-</html>
-</input>
-<button id="btnBack">Go back</button>
-</div>
-<script src="TriviaAdmin.js"></script>
+                <p>Is the answer true or false?</p>
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" id="btnCorrectAnswerTrue" name="option" value="true">True
+                    </label>
+                    <label>
+                        <input type="radio" name="option" id="btnCorrectAnswerFalse" value="false">False
+                    </label>
+                </div>
+                <button type="button" class="btn" id="btnAddQuestion">Add question</button>
+                <h2>Delete a question</h2>
+                <input type="text" name="delete" id="questionId" placeholder="question ID">
+                <button type="button" class="btn" id="btnDeleteQuestion">Delete question</button>
+            </form>
+            <button id="btnBack">Go back</button>   
+        </div>
+    </div>
+    <script defer src="TriviaAdmin.js"></script>
 </body>
 </html>
-<!-- Verkar inte riktigt som att jag stänger mina HTML-taggar på rätt sätt. Kolla det.  -->

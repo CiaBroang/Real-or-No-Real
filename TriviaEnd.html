@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trivia quiz ended screen</title>
-        <link rel="stylesheet" href="Trivia.css">
-    </head>
-    <body>
-        <div class="app">
-            <h1>Congrats!</h1>
-            <h2>Your score is
-                <span id="finalScore"></span>
-                out of
-                <span id="totalQuestionCount"></span>
-            </h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia quiz ended screen</title>
+    <link rel="stylesheet" href="Trivia.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Congrats!</h1>
+        <h2>Your score is
+            <span id="finalScore"></span>
+            out of
+            <span id="totalQuestionCount"></span>
+        </h2>
 
-            <canvas id="chartId" aria-label="chart" height="350" width="580"></canvas>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+        <canvas id="chartId" aria-label="chart" height="350" width="580"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
 
-            <div id="highScores">
-                <h2>High Scores</h2>
-                <ul id="highScoresList"></ul>
-            </div>
-            <form>
-                <input type="text" name="username" id="username" placeholder="username">
-            </input>
+        <div id="highScores">
+            <h2>High Scores</h2>
+            <ul id="highScoresList"></ul>
+        </div>
+        <form>
+            <input type="text" name="username" id="username" placeholder="username">
             <button type="button" class="btn" id="btnSaveScore" disabled>
                 Save my score</button>
             <button type="button" class="btn" id="btnRestartQuiz">Play again</button>
             <button type="button" class="btn" id="btnAdmin">Go to admin page</button>
         </form>
-    </body>
-</html></div><script src="TriviaEnd.js"></script></body></html>
+    </div>
+    <script src="TriviaEnd.js"></script>
+</body>
+</html>
